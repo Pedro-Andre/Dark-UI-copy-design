@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicitial-scale=1">
+        <title>Questão5</title>
+<script type="text/javascript">
+
+
+function envia(){
+var valor= parseFloat(document.fmvalor.txvalor.value);
+if (document.fmvalor.rdpag[0].checked==true){
+alert("O valor a vista com desconto é de: "+valor*0.95)
+}
+if(document.fmvalor.rdpag[1].checked==true){
+alert("O valor a prazo é de:"+valor*1.05)
+}
+}
+</script>
+</head>
+
+
+<body>
+<form name="fmvalor">
+Valor....<input type="text" name="txvalor" value=""><br>
+
+
+Escolha a condição de pagamento:
+<label>
+A vista
+
+
+<input type="radio" name="rdpag" value="" onclick="envia();"></label>
+
+
+<label>
+A prazo:
+<input type="radio" name"rdpag" value="" onclick="envia();"></label>
+
+
+</form>
+
+
+</body>
+</html>

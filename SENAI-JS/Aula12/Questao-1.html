@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questão 1</title>
+</head>
+
+	<style type="text/css">
+		body{
+			background: #262626;
+		}
+
+		p{
+			font-weight: 500;
+			font-size: 20px;
+			color: #fff;
+			margin-top: 20%;
+			text-align: center;
+			text-shadow: 1px 2px 7px #ffd900,
+						-1px -2px 7px #ffd900;;
+		}
+
+		input{
+			margin: 20px;
+			background: #262626;
+			padding: 10px;
+			border: 3px solid aqua;
+			border-radius: 10px;
+			box-shadow: 1px 4px 15px aqua,
+						-1px -4px 15px aqua;
+			color: #fff;
+			font-weight: 500;
+			font-size: 15px;
+			
+		}
+
+	</style>
+
+<body>
+
+	<script type="text/javascript">
+/*Script que deverá abrir o link digitado no campo*/		
+		function abrir(){
+			if (document.endereco.site.value==""){
+				window.alert("Digite o link do site corretamente ou cole-o no campo!");
+				document.endereco.site.focus();
+				return false;
+			}
+			window.open(document.endereco.site.value);
+		}
+	</script>
+
+<form method="post" enctype="text/plain" name="endereco">
+
+		<p>Digite o endereço: <input type="text" name="site" size="50" maxlength="40"></i>
+
+		<input type="submit" name="ir"  value="    Ir    " onclick="abrir();">
+	</form>
+
+
+
+</body>
+</html>

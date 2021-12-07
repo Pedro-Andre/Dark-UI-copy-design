@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questão 7</title>
+</head>
+
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');	
+		
+		body{
+			background: #262626;
+		}
+
+		p{
+			font-weight: 500;
+			font-size: 20px;
+			color: #fff;
+			margin-top: 5%;
+			text-align: center;
+			text-shadow: 1px 2px 7px #ffd900,
+						-1px -2px 7px #ffd900;;
+		}
+
+		input{
+			margin: 20px;
+			background: #262626;
+			padding: 10px;
+			border: 3px solid aqua;
+			border-radius: 10px;
+			box-shadow: 1px 4px 15px aqua,
+						-1px -4px 15px aqua;
+			color: #fff;
+			font-weight: 500;
+			font-size: 15px;
+			text-shadow: 1px 2px 7px #ffd900,
+						-1px -2px 7px #ffd900;
+		}
+
+		textarea{
+			font-family: 'Montserrat', sans-serif;
+			background: #262626;
+			border: 3px solid aqua;
+			border-radius: 10px;
+			box-shadow: 1px 4px 15px aqua,
+						-1px -4px 15px aqua;
+			color: aqua;
+			font-weight: 500;
+			font-size: 15px;
+			letter-spacing: 3px;
+			line-height: 22px;
+		}
+
+	</style>
+
+<body>
+	<form action="" method="post" enctype="text/plain" name="formtexto">
+	
+		<p>Comente sobre a corrupção no Brasil</p>
+
+			<center><textarea rows="20" cols="100" placeholder="digite o texto aqui" class="area" name="area" value="texto"></textarea></center>
+
+			<center><input type="submit" value="Enviar" onclick="envia()" href=""></center>
+
+	</form>
+<!-- script -->
+	<script type="text/javascript">
+		
+		function envia(){
+
+			if (document.formtexto.area.value==""){
+				window.alert('Você deve escrever algo para enviar');
+				document.formtexto.area.focus();
+				return false;
+			}	
+			if (document.formtexto.area.value !="") {
+				window.open("obrigado.html");
+			}
+		}	
+		
+
+
+	</script>
+</body>
+</html>

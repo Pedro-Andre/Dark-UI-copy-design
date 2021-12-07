@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questão 5</title>
+
+	<!--FUNÇÃO PARA CALCULAR O PERCENTUAL-->
+	<script type="text/javascript">
+		function envia(){
+			var valor=parseFloat(document.formsss.clvalor.value);
+			if (document.formsss.sels[0].checked==true) {
+				alert("O valor a vista com desconto é de: "+valor*0.95)
+			}
+			if (document.formsss.sels[1].checked==true) {
+				alert("O valor a prazo é de: "+valor*1.05)
+			}
+		}
+	</script>
+
+</head>
+<style type="text/css">
+		body{
+			margin-top: 250px;
+			text-align: center;
+			background: #262626;
+			color: #fff;
+		}
+
+
+		p{
+			font-weight: 500;
+			font-size: 20px;
+			color: #fff;
+			margin-top: 20%;
+			text-align: center;
+			text-shadow: 1px 2px 7px #ffd900,
+						-1px -2px 7px #ffd900;;
+		}
+
+		.valor{
+			margin: 20px;
+			background: #262626;
+			padding: 10px;
+			border: 3px solid aqua;
+			border-radius: 10px;
+			box-shadow: 1px 4px 15px aqua,
+						-1px -4px 15px aqua;
+			color: #fff;
+			font-weight: 500;
+			font-size: 15px;
+		}
+
+		.porcento{
+			margin-right: 25px;
+			background: #262626;
+			padding: 10px;
+			border: 3px solid aqua;
+			border-radius: 10px;
+			box-shadow: 1px 4px 15px aqua,
+						-1px -4px 15px aqua;
+			color: #fff;
+			font-weight: 500;
+			font-size: 15px;
+		}
+
+		.porcento{
+			width: 15px;
+			height: 15px;
+			background-color: ;
+			box-shadow: 1px 4px 15px aqua, -1px -4px 15px aqua;
+		}
+
+	</style>
+<body>
+	<form name="formsss">
+		<p>Valor:
+		<input type="text" name="clvalor" size="35" class="valor" id="numero">
+<br>
+<br>
+
+		<label>
+		Escolha a condição de pagamento:
+		A vista <input type="radio" name="sels" size="35" class="porcento" onclick="envia()"></label>	
+
+
+		<label>
+		A prazo <input type="radio" name="sels" size="35" class="porcento" onclick="envia()"></p></label>
+		
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Método Confirm</title>
+</head>
+<body>
+	
+<script type="text/javascript">
+	/*OBJETIVO: Desenvolver um programa que faça o teste de execução de duas opções utilizando o método confirm.*/
+
+	/*VARIAVEIS*/
+	var js_resp;
+
+	/*Após a seleção do botão js_resp recebrá um valor lógico (true ou false), capturado pelo método confirm.*/
+	var js_resp = window.confirm('Clique em um dos dois botões.')	
+
+
+	/*DECISÃO CONDICIONAL COMPOSTA*/
+	if (js_resp==true) {
+		document.write('Você acionou o botão: <b>OK</b>!');
+	}
+	else{
+		document.write('Você acionou o botão: <b>Cancelar</b>!');
+	}
+
+
+</script>
+</body>
+</html>
