@@ -1,80 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark UI - Netflix</title>
 
     <!--icons-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+      rel="icon"
+      href="https://mir-s3-cdn-cf.behance.net/projects/404/36382b101558415.Y3JvcCwxODkxLDE0NzksMzMyLDYw.png"
+    />
 
     <!--css-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-<body>
-    
-<div class="container">
-
-    <!--navbar-->
-    <div class="navbar">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--navbar-->
+      <div class="navbar">
         <nav>
-            <ul>
-                <img src="https://i.imgur.com/wERa0Uu.png">
-                <a href="#">Home</a>
-                <a href="#">Series</a>
-                <a href="#">Story</a>
-            </ul>
+          <ul>
+            <img src="./assets/imagens/logo.svg" />
+            <a href="#">Home</a>
+            <a href="#">Series</a>
+            <a href="#">Story</a>
+          </ul>
         </nav>
 
         <nav>
-            <div class="search">
-                <i class="uil uil-search"></i>
-                <input type="text">
-            </div>
+          <div class="search">
+            <i data-feather="search" class="icon"></i>
+            <input type="text" />
+          </div>
         </nav>
-    </div>
+      </div>
 
-    <!--texts-->
-    <div class="title">
+      <!--texts-->
+      <div class="title">
         <p class="subt">
-            the question is not where, <br> but when.
+          the question is not where, <br />
+          but when.
         </p>
 
         <p class="dark">DARK</p>
 
         <p class="season">Dark 2017 - Season 2</p>
-    </div>
+      </div>
 
-    <!--person-->
-    <div class="persona">
-        <img src="https://i.imgur.com/4ykbjN0.png">
-    </div>
+      <!--person-->
+      <div class="persona">
+        <img src="./assets/imagens/personaFlip.png" />
+      </div>
 
-    <!--objects-->
-    <div class="rectangle"></div>
-    <div class="circle"></div>
+      <!--objects-->
+      <div class="rectangle"></div>
+      <div class="circle"></div>
 
-    <!--bottom texts-->
-    <div class="bottom-texts">
-        <p class="main">
-            watch season 2 now on netflix
-        </p>
+      <!--bottom texts-->
+      <div class="bottom-texts">
+        <p class="main">watch season 2 now on netflix</p>
 
         <div class="sub-bottom">
-            <p class="subs">
-                <span>Actors:</span> Louis Hofmann, Oliver Masucci, Jördis Triebel
-            </p>
+          <p class="subs">
+            <span>Actors:</span> Louis Hofmann, Oliver Masucci, Jördis Triebel
+          </p>
 
-            <p class="subs">
-                <span>Genres:</span> German, TV Mysteries, Crime TV Shows
-            </p>
+          <p class="subs">
+            <span>Genres:</span> German, TV Mysteries, Crime TV Shows
+          </p>
         </div>
+      </div>
     </div>
-</div>
 
-
-
-</body>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
